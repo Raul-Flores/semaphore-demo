@@ -1,7 +1,7 @@
 ---
-- hosts: xr
-  connection: local
+- hosts: XR
   gather_facts: no
+  connection: local
 
   tasks:
   - name: get IOS-XR running configuration

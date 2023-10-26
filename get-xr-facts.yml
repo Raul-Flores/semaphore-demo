@@ -9,6 +9,7 @@
     cisco.iosxr.iosxr_facts:
       gather_subset: all
       gather_network_resources: all
-    register: output
-  - debug: var=output.stdout_lines
+    register: iosxr_data
+  - debug:
+        var: iosxr_data  # Muestra la salida de la tarea "iosxr_facts"
 

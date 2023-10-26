@@ -1,7 +1,7 @@
 ---
 - hosts: XR
   gather_facts: no
-  connection: ansible.netcommon.network_cli
+  connection: paramiko
   vars:
     ansible_ssh_common_args: '-o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
   tasks:
